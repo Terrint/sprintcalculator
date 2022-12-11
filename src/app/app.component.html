@@ -1,0 +1,9 @@
+<div class="grid-container">
+  <div class="header">
+    <h2>Automatic Sprint Calculator</h2>
+  </div>
+<div class="grid-item1"><app-story [story]="stories"></app-story></div>
+<div class="grid-item2"><app-add-story (emitstory)="emitstory($event)"></app-add-story></div>
+<div class="grid-item3"><app-sprint [generatedStories]="selectedStories"></app-sprint></div>
+<div class="grid-item4"><app-sprint-calculator (clearStory)="clearStory()" (clearSprint)="clearSprint()" (generatedStories)="generatedStories($event)" [story]="stories"></app-sprint-calculator></div>
+</div>

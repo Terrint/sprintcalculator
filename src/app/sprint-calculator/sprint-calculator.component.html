@@ -1,0 +1,8 @@
+<p>SPRINT CALCULATOR</p>
+<form #storycalcForm="ngForm" 
+(ngSubmit)="generatefn(storycalcForm)" class="form-sprint">
+<input ngModel type="number" name="sprintSize" placeholder="Sprint Point" #sprintSize="ngModel" class="form-control">
+<button type="submit" [disabled]="!storycalcForm.valid" class="form-control">Auto generate</button>
+<button (click)="clearStories()" class="form-control">Clear Stories</button>
+<button (click)="clearSprintfn()" class="form-control">Clear sprints</button>
+</form>

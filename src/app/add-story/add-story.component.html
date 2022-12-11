@@ -1,0 +1,9 @@
+<div>
+<div><p>ADD STORY</p></div>
+<form class="form-story" #storyForm="ngForm"
+(ngSubmit)="onSubmit(storyForm)">
+<input class="form-control" ngModel type="text" name="storyName" id="storyName"  #storyName="ngModel" placeholder="Story Name" required/>
+<input class="form-control" ngModel type="number" name="storyPoint" id="storyPoint" #storyPoint="ngModel" placeholder="Story Point" required/>
+<button type="submit" [disabled]="!storyForm.valid" class="btn btn-primary">Add</button>
+</form>
+</div>

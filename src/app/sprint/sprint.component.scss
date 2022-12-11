@@ -1,0 +1,17 @@
+.sprint
+{
+    background-color: red;
+    width:50px;
+    //height:50%;
+    word-wrap: break-word;
+    text-align: center;
+    padding: 10px;
+    color:yellow;
+   
+}
+.container
+{
+    display: flex;
+    column-gap: 20px;
+    //justify-content: space-between
+}
